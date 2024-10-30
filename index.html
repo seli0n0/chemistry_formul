@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Химические Формулы</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Химические Формулы</h1>
+        <p>Таблица Менделеева, растворимости и активности металлов.</p>
+    </header>
+
+    <main>
+        <!-- Таблица Менделеева -->
+        <section id="periodic-table">
+            <h2 onclick="toggleSection('periodic-content')">Таблица Менделеева</h2>
+            <div id="periodic-content" class="formula-section">
+                <table>
+                    <tr>
+                        <th>H</th>
+                        <th>He</th>
+                    </tr>
+                    <tr>
+                        <th>Li</th>
+                        <th>Be</th>
+                        <th>B</th>
+                        <th>C</th>
+                        <th>N</th>
+                        <th>O</th>
+                        <th>F</th>
+                        <th>Ne</th>
+                    </tr>
+                    <tr>
+                        <th>Na</th>
+                        <th>Mg</th>
+                        <th>Al</th>
+                        <th>Si</th>
+                        <th>P</th>
+                        <th>S</th>
+                        <th>Cl</th>
+                        <th>Ar</th>
+                    </tr>
+                    <tr>
+                        <th>K</th>
+                        <th>Ca</th>
+                        <th>Sc</th>
+                        <th>Ti</th>
+                        <th>V</th>
+                        <th>Cr</th>
+                        <th>Mn</th>
+                        <th>Fe</th>
+                        <th>Co</th>
+                        <th>Ni</th>
+                        <th>Cu</th>
+                        <th>Zn</th>
+                    </tr>
+                    <tr>
+                        <th>Rb</th>
+                        <th>Sr</th>
+                        <th>Y</th>
+                        <th>Zr</th>
+                        <th>Nb</th>
+                        <th>Mo</th>
+                        <th>Tc</th>
+                        <th>Ru</th>
+                        <th>Rh</th>
+                        <th>Pd</th>
+                        <th>Ag</th>
+                        <th>Cd</th>
+                    </tr>
+                    <tr>
+                        <th>Cs</th>
+                        <th>Ba</th>
+                        <th>La</th>
+                        <th>Ce</th>
+                        <th>Pr</th>
+                        <th>Nd</th>
+                        <th>Pm</th>
+                        <th>Sm</th>
+                        <th>Eu</th>
+                        <th>Gd</th>
+                        <th>Tb</th>
+                        <th>Dy</th>
+                    </tr>
+                    <tr>
+                        <th>Lu</th>
+                        <th>Hf</th>
+                        <th>Ta</th>
+                        <th>W</th>
+                        <th>Re</th>
+                        <th>Os</th>
+                        <th>Ir</th>
+                        <th>Pt</th>
+                        <th>Au</th>
+                        <th>Hg</th>
+                        <th>Tl</th>
+                        <th>Pb</th>
+                    </tr>
+                    <tr>
+                        <th>Fr</th>
+                        <th>Ra</th>
+                        <th>Ac</th>
+                        <th>Th</th>
+                        <th>Pa</th>
+                        <th>U</th>
+                        <th>Np</th>
+                        <th>Pu</th>
+                        <th>Am</th>
+                        <th>Cm</th>
+                        <th>Bk</th>
+                        <th>Cf</th>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Таблица растворимости -->
+        <section id="solubility-table">
+            <h2 onclick="toggleSection('solubility-content')">Таблица растворимости</h2>
+            <div id="solubility-content" class="formula-section">
+                <table>
+                    <tr>
+                        <th>Соль</th>
+                        <th>Растворимость в воде</th>
+                    </tr>
+                    <tr>
+                        <td>NaCl</td>
+                        <td>Растворима</td>
+                    </tr>
+                    <tr>
+                        <td>AgCl</td>
+                        <td>Нерастворима</td>
+                    </tr>
+                    <tr>
+                        <td>BaSO₄</td>
+                        <td>Нерастворима</td>
+                    </tr>
+                    <tr>
+                        <td>CaCO₃</td>
+                        <td>Нерастворима</td>
+                    </tr>
+                    <tr>
+                        <td>KNO₃</td>
+                        <td>Растворима</td>
+                    </tr>
+                    <tr>
+                        <td>Mg(OH)₂</td>
+                        <td>Нерастворима</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Ряд активности металлов -->
+        <section id="activity-series">
+            <h2 onclick="toggleSection('activity-content')">Ряд активности металлов</h2>
+            <div id="activity-content" class="formula-section">
+                <ul>
+                    <li>Литий (Li)</li>
+                    <li>Калий (K)</li>
+                    <li>Кальций (Ca)</li>
+                    <li>Натрий (Na)</li>
+                    <li>Барий (Ba)</li>
+                    <li>Алюминий (Al)</li>
+                    <li>Цинк (Zn)</li>
+                    <li>Хром (Cr)</li>
+                    <li>Железо (Fe)</li>
+                    <li>Кобальт (Co)</li>
+                    <li>Никель (Ni)</li>
+                    <li>Олово (Sn)</li>
+                    <li>Свинець (Pb)</li>
+                    <li>Медь (Cu)</li>
+                    <li>Ртуть (Hg)</li>
+                    <li>Серебро (Ag)</li>
+                    <li>Золото (Au)</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Химические Формулы</p>
+    </footer>
+</body>
+</html>
