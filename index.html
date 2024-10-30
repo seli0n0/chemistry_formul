@@ -20,226 +20,848 @@
             <h2 onclick="toggleSection('periodic-content')">Таблица Менделеева</h2>
             <div id="periodic-content" class="formula-section">
                 <table>
-                    <tr>
-                        <th>H</th>
-                        <th>He</th>
-                    </tr>
-                    <tr>
-                        <th>Li</th>
-                        <th>Be</th>
-                        <th>B</th>
-                        <th>C</th>
-                        <th>N</th>
-                        <th>O</th>
-                        <th>F</th>
-                        <th>Ne</th>
-                    </tr>
-                    <tr>
-                        <th>Na</th>
-                        <th>Mg</th>
-                        <th>Al</th>
-                        <th>Si</th>
-                        <th>P</th>
-                        <th>S</th>
-                        <th>Cl</th>
-                        <th>Ar</th>
-                    </tr>
-                    <tr>
-                        <th>K</th>
-                        <th>Ca</th>
-                        <th>Sc</th>
-                        <th>Ti</th>
-                        <th>V</th>
-                        <th>Cr</th>
-                        <th>Mn</th>
-                        <th>Fe</th>
-                        <th>Co</th>
-                        <th>Ni</th>
-                        <th>Cu</th>
-                        <th>Zn</th>
-                    </tr>
-                    <tr>
-                        <th>Rb</th>
-                        <th>Sr</th>
-                        <th>Y</th>
-                        <th>Zr</th>
-                        <th>Nb</th>
-                        <th>Mo</th>
-                        <th>Tc</th>
-                        <th>Ru</th>
-                        <th>Rh</th>
-                        <th>Pd</th>
-                        <th>Ag</th>
-                        <th>Cd</th>
-                    </tr>
-                    <tr>
-                        <th>Cs</th>
-                        <th>Ba</th>
-                        <th>La</th>
-                        <th>Ce</th>
-                        <th>Pr</th>
-                        <th>Nd</th>
-                        <th>Pm</th>
-                        <th>Sm</th>
-                        <th>Eu</th>
-                        <th>Gd</th>
-                        <th>Tb</th>
-                        <th>Dy</th>
-                    </tr>
-                    <tr>
-                        <th>Lu</th>
-                        <th>Hf</th>
-                        <th>Ta</th>
-                        <th>W</th>
-                        <th>Re</th>
-                        <th>Os</th>
-                        <th>Ir</th>
-                        <th>Pt</th>
-                        <th>Au</th>
-                        <th>Hg</th>
-                        <th>Tl</th>
-                        <th>Pb</th>
-                    </tr>
-                    <tr>
-                        <th>Fr</th>
-                        <th>Ra</th>
-                        <th>Ac</th>
-                        <th>Th</th>
-                        <th>Pa</th>
-                        <th>U</th>
-                        <th>Np</th>
-                        <th>Pu</th>
-                        <th>Am</th>
-                        <th>Cm</th>
-                        <th>Bk</th>
-                        <th>Cf</th>
-                    </tr>
-                </table>
-            </div>
-        </section>
-
-        <!-- Полноценная таблица растворимости -->
-        <section id="solubility-table">
-            <h2 onclick="toggleSection('solubility-content')">Таблица растворимости</h2>
-            <div id="solubility-content" class="formula-section">
-                <table>
                     <thead>
                         <tr>
-                            <th>Соединение</th>
-                            <th>Растворимость в воде</th>
+                            <th>№</th>
+                            <th>Символ</th>
+                            <th>Элемент</th>
+                            <th>Атомная масса (г/моль)</th>
+                            <th>Валентность</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>NaCl (хлорид натрия)</td>
-                            <td>Растворимо</td>
+                            <td>1</td>
+                            <td>H</td>
+                            <td>Водород</td>
+                            <td>1.008</td>
+                            <td>I</td>
                         </tr>
                         <tr>
-                            <td>KNO₃ (нитрат калия)</td>
-                            <td>Растворимо</td>
+                            <td>2</td>
+                            <td>He</td>
+                            <td>Гелий</td>
+                            <td>4.0026</td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td>AgCl (хлорид серебра)</td>
-                            <td>Нерастворимо</td>
+                            <td>3</td>
+                            <td>Li</td>
+                            <td>Литий</td>
+                            <td>6.94</td>
+                            <td>I</td>
                         </tr>
                         <tr>
-                            <td>BaSO₄ (сульфат бария)</td>
-                            <td>Нерастворимо</td>
+                            <td>4</td>
+                            <td>Be</td>
+                            <td>Бериллий</td>
+                            <td>9.0122</td>
+                            <td>II</td>
                         </tr>
                         <tr>
-                            <td>CaCO₃ (карбонат кальция)</td>
-                            <td>Нерастворимо</td>
+                            <td>5</td>
+                            <td>B</td>
+                            <td>Бор</td>
+                            <td>10.81</td>
+                            <td>III</td>
                         </tr>
                         <tr>
-                            <td>Mg(OH)₂ (гидроксид магния)</td>
-                            <td>Нерастворимо</td>
+                            <td>6</td>
+                            <td>C</td>
+                            <td>Углерод</td>
+                            <td>12.011</td>
+                            <td>IV</td>
                         </tr>
                         <tr>
-                            <td>Na₂SO₄ (сульфат натрия)</td>
-                            <td>Растворимо</td>
+                            <td>7</td>
+                            <td>N</td>
+                            <td>Азот</td>
+                            <td>14.007</td>
+                            <td>III</td>
                         </tr>
                         <tr>
-                            <td>K₂CO₃ (карбонат калия)</td>
-                            <td>Растворимо</td>
+                            <td>8</td>
+                            <td>O</td>
+                            <td>Кислород</td>
+                            <td>15.999</td>
+                            <td>II</td>
                         </tr>
                         <tr>
-                            <td>CuSO₄ (сульфат меди)</td>
-                            <td>Растворимо</td>
+                            <td>9</td>
+                            <td>F</td>
+                            <td>Фтор</td>
+                            <td>18.998</td>
+                            <td>I</td>
                         </tr>
                         <tr>
-                            <td>NH₄Cl (хлорид аммония)</td>
-                            <td>Растворимо</td>
+                            <td>10</td>
+                            <td>Ne</td>
+                            <td>Неон</td>
+                            <td>20.180</td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td>AgNO₃ (нитрат серебра)</td>
-                            <td>Растворимо</td>
+                            <td>11</td>
+                            <td>Na</td>
+                            <td>Натрий</td>
+                            <td>22.990</td>
+                            <td>I</td>
                         </tr>
                         <tr>
-                            <td>Fe(OH)₃ (гидроксид железа)</td>
-                            <td>Нерастворимо</td>
+                            <td>12</td>
+                            <td>Mg</td>
+                            <td>Магний</td>
+                            <td>24.305</td>
+                            <td>II</td>
                         </tr>
                         <tr>
-                            <td>CaSO₄ (сульфат кальция)</td>
-                            <td>Частично растворимо</td>
+                            <td>13</td>
+                            <td>Al</td>
+                            <td>Алюминий</td>
+                            <td>26.982</td>
+                            <td>III</td>
                         </tr>
                         <tr>
-                            <td>Li₂CO₃ (карбонат лития)</td>
-                            <td>Растворимо</td>
+                            <td>14</td>
+                            <td>Si</td>
+                            <td>Кремний</td>
+                            <td>28.085</td>
+                            <td>IV</td>
                         </tr>
                         <tr>
-                            <td>SrSO₄ (сульфат стронция)</td>
-                            <td>Нерастворимо</td>
+                            <td>15</td>
+                            <td>P</td>
+                            <td>Фосфор</td>
+                            <td>30.974</td>
+                            <td>III, V</td>
                         </tr>
                         <tr>
-                            <td>PbI₂ (йодид свинца)</td>
-                            <td>Нерастворимо</td>
+                            <td>16</td>
+                            <td>S</td>
+                            <td>Сера</td>
+                            <td>32.06</td>
+                            <td>II, IV, VI</td>
                         </tr>
                         <tr>
-                            <td>NaHCO₃ (бикарбонат натрия)</td>
-                            <td>Растворимо</td>
+                            <td>17</td>
+                            <td>Cl</td>
+                            <td>Хлор</td>
+                            <td>35.45</td>
+                            <td>I, III, V, VII</td>
                         </tr>
                         <tr>
-                            <td>Na₂CO₃ (карбонат натрия)</td>
-                            <td>Растворимо</td>
+                            <td>18</td>
+                            <td>Ar</td>
+                            <td>Аргон</td>
+                            <td>39.948</td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td>KCl (хлорид калия)</td>
-                            <td>Растворимо</td>
+                            <td>19</td>
+                            <td>K</td>
+                            <td>Калий</td>
+                            <td>39.098</td>
+                            <td>I</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>Ca</td>
+                            <td>Кальций</td>
+                            <td>40.078</td>
+                            <td>II</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>Sc</td>
+                            <td>Скандий</td>
+                            <td>44.956</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>Ti</td>
+                            <td>Титан</td>
+                            <td>47.867</td>
+                            <td>II, IV</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>V</td>
+                            <td>Ванадий</td>
+                            <td>50.941</td>
+                            <td>III, IV, V</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>Cr</td>
+                            <td>Хром</td>
+                            <td>51.996</td>
+                            <td>II, III, VI</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>Mn</td>
+                            <td>Марганец</td>
+                            <td>54.938</td>
+                            <td>II, IV, VII</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>Fe</td>
+                            <td>Железо</td>
+                            <td>55.845</td>
+                            <td>II, III</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>Co</td>
+                            <td>Кобальт</td>
+                            <td>58.933</td>
+                            <td>II, III</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>Ni</td>
+                            <td>Никель</td>
+                            <td>58.693</td>
+                            <td>II, III</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>Cu</td>
+                            <td>Медь</td>
+                            <td>63.546</td>
+                            <td>I, II</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>Zn</td>
+                            <td>Цинк</td>
+                            <td>65.38</td>
+                            <td>II</td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>Ga</td>
+                            <td>Галлий</td>
+                            <td>69.723</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td>Ge</td>
+                            <td>Германий</td>
+                            <td>72.630</td>
+                            <td>IV</td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>As</td>
+                            <td>Арсен</td>
+                            <td>74.922</td>
+                            <td>III, V</td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>Se</td>
+                            <td>Селен</td>
+                            <td>78.971</td>
+                            <td>II, IV, VI</td>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>Br</td>
+                            <td>Бром</td>
+                            <td>79.904</td>
+                            <td>I, III, V, VII</td>
+                        </tr>
+                        <tr>
+                            <td>36</td>
+                            <td>Kr</td>
+                            <td>Криптон</td>
+                            <td>83.798</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>37</td>
+                            <td>Rb</td>
+                            <td>Рубидий</td>
+                            <td>85.468</td>
+                            <td>I</td>
+                        </tr>
+                        <tr>
+                            <td>38</td>
+                            <td>Sr</td>
+                            <td>Стронций</td>
+                            <td>87.62</td>
+                            <td>II</td>
+                        </tr>
+                        <tr>
+                            <td>39</td>
+                            <td>Y</td>
+                            <td>Иттрий</td>
+                            <td>88.906</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>40</td>
+                            <td>Zr</td>
+                            <td>Цирконий</td>
+                            <td>91.224</td>
+                            <td>IV</td>
+                        </tr>
+                        <tr>
+                            <td>41</td>
+                            <td>Nb</td>
+                            <td>Ниобий</td>
+                            <td>92.906</td>
+                            <td>V</td>
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>Mo</td>
+                            <td>Молибден</td>
+                            <td>95.95</td>
+                            <td>IV, VI</td>
+                        </tr>
+                        <tr>
+                            <td>43</td>
+                            <td>Tc</td>
+                            <td>Технеций</td>
+                            <td>98</td>
+                            <td>IV, VII</td>
+                        </tr>
+                        <tr>
+                            <td>44</td>
+                            <td>Ru</td>
+                            <td>Рутений</td>
+                            <td>101.07</td>
+                            <td>II, III, IV</td>
+                        </tr>
+                        <tr>
+                            <td>45</td>
+                            <td>Rh</td>
+                            <td>Родий</td>
+                            <td>102.91</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>46</td>
+                            <td>Pd</td>
+                            <td>Палладий</td>
+                            <td>106.42</td>
+                            <td>II</td>
+                        </tr>
+                        <tr>
+                            <td>47</td>
+                            <td>Ag</td>
+                            <td>Серебро</td>
+                            <td>107.87</td>
+                            <td>I</td>
+                        </tr>
+                        <tr>
+                            <td>48</td>
+                            <td>Cd</td>
+                            <td>Кадмий</td>
+                            <td>112.41</td>
+                            <td>II</td>
+                        </tr>
+                        <tr>
+                            <td>49</td>
+                            <td>In</td>
+                            <td>Индий</td>
+                            <td>114.82</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>50</td>
+                            <td>Sn</td>
+                            <td>Олово</td>
+                            <td>118.71</td>
+                            <td>II, IV</td>
+                        </tr>
+                        <tr>
+                            <td>51</td>
+                            <td>Sb</td>
+                            <td>Сурьма</td>
+                            <td>121.76</td>
+                            <td>III, V</td>
+                        </tr>
+                        <tr>
+                            <td>52</td>
+                            <td>Te</td>
+                            <td>Селен</td>
+                            <td>127.60</td>
+                            <td>IV, VI</td>
+                        </tr>
+                        <tr>
+                            <td>53</td>
+                            <td>I</td>
+                            <td>Йод</td>
+                            <td>126.90</td>
+                            <td>I</td>
+                        </tr>
+                        <tr>
+                            <td>54</td>
+                            <td>Xe</td>
+                            <td>Ксенон</td>
+                            <td>131.29</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>55</td>
+                            <td>Cs</td>
+                            <td>Цезий</td>
+                            <td>132.91</td>
+                            <td>I</td>
+                        </tr>
+                        <tr>
+                            <td>56</td>
+                            <td>Ba</td>
+                            <td>Барий</td>
+                            <td>137.33</td>
+                            <td>II</td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>La</td>
+                            <td>Лантан</td>
+                            <td>138.91</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>58</td>
+                            <td>Ce</td>
+                            <td>Церий</td>
+                            <td>140.12</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>59</td>
+                            <td>Pr</td>
+                            <td>Празеодим</td>
+                            <td>140.91</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>60</td>
+                            <td>Nd</td>
+                            <td>Неодим</td>
+                            <td>144.24</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>61</td>
+                            <td>Pm</td>
+                            <td>Прометий</td>
+                            <td>145</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>62</td>
+                            <td>Sm</td>
+                            <td>Самарий</td>
+                            <td>150.36</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>63</td>
+                            <td>Eu</td>
+                            <td>Европий</td>
+                            <td>151.96</td>
+                            <td>II, III</td>
+                        </tr>
+                        <tr>
+                            <td>64</td>
+                            <td>Gd</td>
+                            <td>Гадолиний</td>
+                            <td>157.25</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>65</td>
+                            <td>Tb</td>
+                            <td>Тербий</td>
+                            <td>158.93</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>66</td>
+                            <td>Dy</td>
+                            <td>Диспрозий</td>
+                            <td>162.50</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>67</td>
+                            <td>Ho</td>
+                            <td>Гольмий</td>
+                            <td>164.93</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>68</td>
+                            <td>Er</td>
+                            <td>Эрбий</td>
+                            <td>167.26</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>69</td>
+                            <td>Tm</td>
+                            <td>Туллий</td>
+                            <td>168.93</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>70</td>
+                            <td>Yb</td>
+                            <td>Иттербий</td>
+                            <td>173.04</td>
+                            <td>II, III</td>
+                        </tr>
+                        <tr>
+                            <td>71</td>
+                            <td>Lu</td>
+                            <td>Лютеций</td>
+                            <td>174.97</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>72</td>
+                            <td>Hf</td>
+                            <td>Гафний</td>
+                            <td>178.49</td>
+                            <td>IV</td>
+                        </tr>
+                        <tr>
+                            <td>73</td>
+                            <td>Ta</td>
+                            <td>Тантал</td>
+                            <td>180.95</td>
+                            <td>V</td>
+                        </tr>
+                        <tr>
+                            <td>74</td>
+                            <td>W</td>
+                            <td>Вольфрам</td>
+                            <td>183.84</td>
+                            <td>IV, VI</td>
+                        </tr>
+                        <tr>
+                            <td>75</td>
+                            <td>Re</td>
+                            <td>Рений</td>
+                            <td>186.21</td>
+                            <td>IV, VII</td>
+                        </tr>
+                        <tr>
+                            <td>76</td>
+                            <td>Os</td>
+                            <td>Осмий</td>
+                            <td>190.23</td>
+                            <td>II, III, IV, VIII</td>
+                        </tr>
+                        <tr>
+                            <td>77</td>
+                            <td>Ir</td>
+                            <td>Иридий</td>
+                            <td>192.22</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>78</td>
+                            <td>Pt</td>
+                            <td>Платина</td>
+                            <td>195.08</td>
+                            <td>II</td>
+                        </tr>
+                        <tr>
+                            <td>79</td>
+                            <td>Au</td>
+                            <td>Золото</td>
+                            <td>196.97</td>
+                            <td>I, III</td>
+                        </tr>
+                        <tr>
+                            <td>80</td>
+                            <td>Hg</td>
+                            <td>Ртуть</td>
+                            <td>200.59</td>
+                            <td>II</td>
+                        </tr>
+                        <tr>
+                            <td>81</td>
+                            <td>Tl</td>
+                            <td>Таллий</td>
+                            <td>204.38</td>
+                            <td>I, III</td>
+                        </tr>
+                        <tr>
+                            <td>82</td>
+                            <td>Pb</td>
+                            <td>Свинец</td>
+                            <td>207.2</td>
+                            <td>II, IV</td>
+                        </tr>
+                        <tr>
+                            <td>83</td>
+                            <td>Bi</td>
+                            <td>Висмут</td>
+                            <td>208.98</td>
+                            <td>III, V</td>
+                        </tr>
+                        <tr>
+                            <td>84</td>
+                            <td>Po</td>
+                            <td>Полоний</td>
+                            <td>209</td>
+                            <td>II, IV</td>
+                        </tr>
+                        <tr>
+                            <td>85</td>
+                            <td>At</td>
+                            <td>Астат</td>
+                            <td>210</td>
+                            <td>I, III, V</td>
+                        </tr>
+                        <tr>
+                            <td>86</td>
+                            <td>Rn</td>
+                            <td>Радий</td>
+                            <td>222</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>87</td>
+                            <td>Fr</td>
+                            <td>Франций</td>
+                            <td>223</td>
+                            <td>I</td>
+                        </tr>
+                        <tr>
+                            <td>88</td>
+                            <td>Ra</td>
+                            <td>Радий</td>
+                            <td>226</td>
+                            <td>II</td>
+                        </tr>
+                        <tr>
+                            <td>89</td>
+                            <td>Ac</td>
+                            <td>Актиний</td>
+                            <td>227</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>90</td>
+                            <td>Th</td>
+                            <td>Торий</td>
+                            <td>232.04</td>
+                            <td>IV</td>
+                        </tr>
+                        <tr>
+                            <td>91</td>
+                            <td>Pa</td>
+                            <td>Платин</td>
+                            <td>231.04</td>
+                            <td>V</td>
+                        </tr>
+                        <tr>
+                            <td>92</td>
+                            <td>U</td>
+                            <td>Уран</td>
+                            <td>238.03</td>
+                            <td>III, IV, VI</td>
+                        </tr>
+                        <tr>
+                            <td>93</td>
+                            <td>Np</td>
+                            <td>Неоптений</td>
+                            <td>237</td>
+                            <td>IV</td>
+                        </tr>
+                        <tr>
+                            <td>94</td>
+                            <td>Pu</td>
+                            <td>Плутоний</td>
+                            <td>244</td>
+                            <td>III, IV, V, VI</td>
+                        </tr>
+                        <tr>
+                            <td>95</td>
+                            <td>Am</td>
+                            <td>Америций</td>
+                            <td>243</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>96</td>
+                            <td>Cm</td>
+                            <td>Кюрий</td>
+                            <td>247</td>
+                            <td>III, IV</td>
+                        </tr>
+                        <tr>
+                            <td>97</td>
+                            <td>Bk</td>
+                            <td>Берклий</td>
+                            <td>247</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>98</td>
+                            <td>Cf</td>
+                            <td>Калифорний</td>
+                            <td>251</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>99</td>
+                            <td>Es</td>
+                            <td>Эйнштейний</td>
+                            <td>252</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>100</td>
+                            <td>Fm</td>
+                            <td>Фермий</td>
+                            <td>257</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>101</td>
+                            <td>Md</td>
+                            <td>Менделеевий</td>
+                            <td>258</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>No</td>
+                            <td>Нобелий</td>
+                            <td>259</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>103</td>
+                            <td>Lr</td>
+                            <td>Лоуренсий</td>
+                            <td>262</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>104</td>
+                            <td>Rf</td>
+                            <td>Резерфордий</td>
+                            <td>267</td>
+                            <td>IV</td>
+                        </tr>
+                        <tr>
+                            <td>105</td>
+                            <td>Db</td>
+                            <td>Дубний</td>
+                            <td>268</td>
+                            <td>IV</td>
+                        </tr>
+                        <tr>
+                            <td>106</td>
+                            <td>Sg</td>
+                            <td>Сиборгий</td>
+                            <td>271</td>
+                            <td>IV</td>
+                        </tr>
+                        <tr>
+                            <td>107</td>
+                            <td>Bh</td>
+                            <td>Борий</td>
+                            <td>270</td>
+                            <td>III</td>
+                        </tr>
+                        <tr>
+                            <td>108</td>
+                            <td>Hs</td>
+                            <td>Хассий</td>
+                            <td>277</td>
+                            <td>IV</td>
+                        </tr>
+                        <tr>
+                            <td>109</td>
+                            <td>Mt</td>
+                            <td>Мейтнерий</td>
+                            <td>276</td>
+                            <td>IV</td>
+                        </tr>
+                        <tr>
+                            <td>110</td>
+                            <td>Ds</td>
+                            <td>Дубна</td>
+                            <td>281</td>
+                            <td>IV</td>
+                        </tr>
+                        <tr>
+                            <td>111</td>
+                            <td>Rg</td>
+                            <td>Рентгений</td>
+                            <td>282</td>
+                            <td>IV</td>
+                        </tr>
+                        <tr>
+                            <td>112</td>
+                            <td>Cn</td>
+                            <td>Коперниций</td>
+                            <td>285</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>113</td>
+                            <td>Nh</td>
+                            <td>Нихоний</td>
+                            <td>286</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>114</td>
+                            <td>Fl</td>
+                            <td>Флеровий</td>
+                            <td>289</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>115</td>
+                            <td>Mc</td>
+                            <td>Московий</td>
+                            <td>290</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>116</td>
+                            <td>Lv</td>
+                            <td>Ливерморий</td>
+                            <td>293</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>117</td>
+                            <td>Ts</td>
+                            <td>Теннессин</td>
+                            <td>294</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>118</td>
+                            <td>Og</td>
+                            <td>Оганесон</td>
+                            <td>294</td>
+                            <td>—</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-        </section>
-
-        <!-- Ряд активности металлов -->
-        <section id="activity-series">
-            <h2 onclick="toggleSection('activity-content')">Ряд активности металлов</h2>
-            <div id="activity-content" class="formula-section">
-                <ul>
-                    <li>Литий (Li)</li>
-                    <li>Калий (K)</li>
-                    <li>Кальций (Ca)</li>
-                    <li>Натрий (Na)</li>
-                    <li>Барий (Ba)</li>
-                    <li>Алюминий (Al)</li>
-                    <li>Цинк (Zn)</li>
-                    <li>Хром (Cr)</li>
-                    <li>Железо (Fe)</li>
-                    <li>Кобальт (Co)</li>
-                    <li>Никель (Ni)</li>
-                    <li>Олово (Sn)</li>
-                    <li>Свинець (Pb)</li>
-                    <li>Медь (Cu)</li>
-                    <li>Ртуть (Hg)</li>
-                    <li>Серебро (Ag)</li>
-                    <li>Золото (Au)</li>
-                </ul>
+            <div class="footer">
+                <p>Source: Wikipedia</p>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2024 Центр Новых Технологий. Все права защищены.</p>
-    </footer>
-</body>
-</html>
+        </body>
+        </html>
+    
