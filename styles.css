@@ -59,3 +59,33 @@ tr:hover {
 .solubility-table tr:hover {
     background-color: #f1f1f1;
 }
+.calculator {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+h1 {
+    color: #4b0082;
+}
+input[type="text"] {
+    padding: 8px;
+    width: 80%;
+    margin: 10px 0;
+}
+button {
+    background-color: #4b0082;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #6a0dad;
+}
+.result {
+    margin-top: 15px;
+    font-size: 18px;
+}
