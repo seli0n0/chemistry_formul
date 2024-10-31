@@ -1022,6 +1022,79 @@
         return mass;
     }
 </script>
+
+<div class="calculator">
+    <h1>Химический калькулятор</h1>
+    <p>Введите химическую формулу (например, H2O, CO2, C6H12O6):</p>
+    <input type="text" id="formulaInput" placeholder="Введите формулу">
+    <p>Введите количество вещества (в молях):</p>
+    <input type="number" id="moleInput" placeholder="Количество молей" step="0.01">
+    <button onclick="calculateMass()">Рассчитать массу</button>
+    <div class="result" id="result"></div>
+</div>
+
+<script>
+    const atomicMasses = {
+        H: 1.008,
+        He: 4.0026,
+        Li: 6.94,
+        Be: 9.0122,
+        B: 10.81,
+        C: 12.011,
+        N: 14.007,
+        O: 15.999,
+        F: 18.998,
+        Ne: 20.18,
+        Na: 22.989,
+        Mg: 24.305,
+        Al: 26.982,
+        Si: 28.085,
+        P: 30.974,
+        S: 32.06,
+        Cl: 35.45,
+        K: 39.098,
+        Ca: 40.078,
+        // Добавьте остальные элементы по мере необходимости
+    };
+
+    function calculateMass() {
+        const formula = document.getElementById("formulaInput").value;
+        const moles = parseFloat(document.getElementById("moleInput").value);
+        const resultElement = document.getElementById("result");
+
+        if (isNaN(moles) || moles <= 0) {
+            resultElement.innerHTML = "Пожалуйста, введите корректное количество молей.";
+            return;
+        }
+
+        try {
+            const molarMass = parseFormula(formula);
+            const mass = molarMass * moles;
+            resultElement.innerHTML = `Масса вещества ${formula} при количестве ${moles} моль = ${mass.toFixed(2)} г`;
+        } catch (error) {
+            resultElement.innerHTML = `Ошибка: ${error.message}`;
+        }
+    }
+
+    function parseFormula(formula) {
+        let molarMass = 0;
+        const regex = /([A-Z][a-z]?)(\d*)/g;
+        let match;
+
+        while ((match = regex.exec(formula)) !== null) {
+            const element = match[1];
+            const count = parseInt(match[2] || "1", 10);
+
+            if (!atomicMasses[element]) {
+                throw new Error(`Элемент "${element}" не найден.`);
+            }
+
+            molarMass += atomicMasses[element] * count;
+        }
+
+        return molarMass;
+    }
+</script>
         </body>
         </html>
     
